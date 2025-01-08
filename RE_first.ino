@@ -1,9 +1,7 @@
 //https://dl.espressif.com/dl/package_esp32_index.json
-
 #include <esp_now.h>
 #include <WiFi.h>
-
-#include <Servo.h> 
+#include <ESP32Servo.h>
 
 int a = 12;
 int b = 14;
@@ -21,7 +19,7 @@ typedef struct struct_message {
 struct_message myData;
 
 
-void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
+void OnDataRecv(const esp_now_recv_info* mac, const uint8_t *incomingData, int len) {
   memcpy(&myData, incomingData, sizeof(myData));
 
 }
