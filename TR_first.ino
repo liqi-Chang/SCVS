@@ -9,7 +9,7 @@ int valy;
 int vall;
 int valr;
 
-uint8_t broadcastAddress[] = {0xEB, 0x6B, 0xEA, 0xC9, 0x9D, 0x1C}; // 替換為你的接收端MAC地址
+uint8_t broadcastAddress[] = {0xCC, 0xDB, 0xA7, 0x9E, 0x9A, 0x4C}; // 替換為你的接收端MAC地址CC:DB:A7:9E:9A:4C
 
 // 定義結構體來保存數據
 typedef struct struct_message {
